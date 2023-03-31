@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page_header {
+  width: 100%;
+  background-color: #926FF6;
+}
+
+.container {
+  max-width: 962px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header_top {
+  padding: 48px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_top_logo {
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 71%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu,
+.projects_menu{
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+.projects_menu{
+  gap: 26px;
+}
+
+.menu_link {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 78%;
+  color: #fff;
+}
+.projects_menu-link{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 78%;
+  letter-spacing: 0.02em;
+  color: #828282;
+  text-decoration: none;
+}
+
+.projects_menu-link.active{
+  background-color: #F3849F;
+  border-radius: 26px;
+  color: #fff;
+  padding: 5px 18px;
+}
+
+.burger_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger_menu {
+  display: none;
+
+}
+
+.burger_menu>div {
+  width: 20px;
+  height: 2px;
+  background-color: #926FF6;
+}
+
+.header_banner {
+  padding-top: 85px;
+  padding-bottom: 105px;
+  text-align: center;
+}
+
+.header_banner_top-title,
+.yellow_title {
+  color: #FFE074;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 71.5%;
+}
+
+.header_banner-title {
+  font-weight: 800;
+  font-size: 63px;
+  line-height: 71.5%;
+  color: #fff;
+  margin: 30px 0;
+}
+
+.header_banner-text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 13px;
+  color: #fff;
+  margin-bottom: 37px;
+}
+
+.main_page {
+  width: 100%;
+}
+
+.agency {
+  margin-top: 144px;
+  margin-bottom: 85px;
+  padding-block: 20px;
+}
+
+.agency_content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.agency_text {
+  max-width: 445px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #4f4f4f;
+  margin-top: 14px;
+}
+
+.main_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 128.5%;
+  letter-spacing: 0.03em;
+  max-width: 215px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+
+.play_video-btn {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F3849F;
+  width: 200px;
+}
+
+.agency_img {
+  max-width: 394px;
+  width: 100%;
+}
+.agency_img-item{
+  width: 100%;
+}
+
+.service{
+  margin-bottom: 106px;
+}
+
+.service_block{
+  max-width: 931px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  display: flex;
+  justify-content:space-between;
+  padding: 73px 76px;
+  gap: 60px;
+}
+.service_block-item{
+  text-align: center;
+}
+.block_item-title{
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.block_item-text{
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.03em;
+color: #4F4F4F;
+}
+
+.projects_gallery{
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.project_gallery-row{
+  display: flex;
+  gap: 27px;
+}
+
+.small{
+  max-width: 359px;
+  width: 100%;
+}
+
+.bigger{
+  max-width: 545px;
+  width: 100%;
+}
+
+.news{
+  width: 100%;
+  background-color: #F7EEFF;
+  margin-top: 215px;
+  padding: 114px 0 167px;
+}
+
+.news_content{
+text-align: center;
+
+}
+
+.text_center{
+  margin-inline: auto;
+  text-align: center;
+}
+
+.news_content-box{
+  margin-top: 58px;
+  display: flex;
+  gap: 31px;
+}
+
+@media(max-width:962px){
+  .project_gallery-row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .reverse{
+    flex-direction: column-reverse;
+  }
+}
+
+@media(max-width:800px) {
+  .agency {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .agency_content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .play_video-btn {
+    margin: 38px auto 0;
+  }
+  .service_block{
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+ .agency_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+
+  .block_item-text{
+    width: 200px;
+  }
+}
+
+@media(max-width:500px) {
+  .menu {
+    display: none;
+  }
+
+  .burger_menu {
+    display: flex;
+  }
+.header_banner{
+  padding-block: 75px;
+}
+  .header_top {
+    padding: 20px 0;
+  }
+
+  .header_banner-title {
+    font-size: 50px;
+  }
+
+  .agency {
+    margin-block: 50px;
+  }
+}
+
+@media(max-width:403px) {
+  .header_banner-title {
+    font-size: 35px;
+    line-height: 100%;
+  }
+}
+@media(max-width:350px){
+  .projects_menu{
+    gap: 15px;
+  }
+}
